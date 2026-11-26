@@ -111,7 +111,11 @@ Link to GitHub repository: <a href="https://github.com/cal-cs184-student/hw4-ilo
 <p>We then connect the point masses with three types of springs. So that we never add the same spring twice, each point only creates springs to neighbors to its left or above it. Structural springs connect a point to the point directly to its left and the point directly above it. They resist stretching. Shearing springs connect a point to its upper left and upper right diagonal neighbors. They resist the grid squares being sheared into parallelograms. Bending springs connect a point to the point two to its left and the point two above it. They resist the cloth folding.</p>
 
 <h3>Results</h3>
-<p>Below is <code>scene/new.json</code> with the wireframe shader. We paused it shortly after the simulation started. With all constraints on each grid square has an X in it from the shearing springs. The bending springs are not visible separately since they lie on top of the structural springs along the same rows and columns. With shearing turned off only the square grid is left. With only shearing turned on we see just the diagonal pattern.</p>
+<p>The screenshots below show the cloth wireframe from <code>scene/pinned2.json</code> at an angled view.</p>
+
+<p>Without shearing constraints, only horizontal and vertical springs (structural and bending) are visible. When shearing constraints are enabled, diagonal springs appear, forming an X-shaped pattern within each grid cell. With all constraints enabled, the wireframe displays the complete spring structure, including both the horizontal/vertical and diagonal connections.</p>
+
+<p>All screenshots are captured from an angled perspective to make the wireframe structure clearly visible for Q1.</p>
 
 <div style="display: flex; flex-direction: column; align-items: center;">
 <table style="width: 100%; text-align: center; border-collapse: collapse;">
